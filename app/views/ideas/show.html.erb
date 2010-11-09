@@ -1,0 +1,16 @@
+<% title "Idea" %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @idea.title %>
+</p>
+<p>
+  <strong>Concept:</strong>
+  <%= @idea.concept %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_idea_path(@idea) %> |
+  <%= link_to "Destroy", @idea, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", ideas_path %>
+</p>
