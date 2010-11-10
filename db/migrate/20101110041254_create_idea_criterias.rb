@@ -1,6 +1,6 @@
-class CreateCriteriaIdeas < ActiveRecord::Migration
+class CreateIdeaCriterias < ActiveRecord::Migration
   def self.up
-    create_table :criteria_ideas do |t|
+    create_table :idea_criterias, :id => false do |t|
       t.integer :criteria_id
       t.integer :idea_id
       t.integer :position
@@ -10,6 +10,6 @@ class CreateCriteriaIdeas < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :criteria_ideas
+    drop_table :idea_criterias
   end
 end
