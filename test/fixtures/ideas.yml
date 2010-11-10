@@ -1,7 +1,13 @@
-one:
-  title: MyString
-  concept: MyText
-
-two:
-  title: MyString
-  concept: MyText
+--- 
+ideas_001: 
+  concept: attention management todo list web app
+  created_at: 2010-11-09 17:50:58.236093
+  title: AutoFocus
+  updated_at: 2010-11-09 17:50:58.236093
+  id: 1
+ideas_002: 
+  concept: SRS flashcard web app with fluency-based/precision teaching principles incorporated
+  created_at: 2010-11-09 17:52:08.316231
+  title: fluencytrainer
+  updated_at: 2010-11-09 17:52:21.784761
+  id: 2
