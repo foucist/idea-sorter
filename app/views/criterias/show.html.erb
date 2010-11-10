@@ -1,0 +1,12 @@
+<% title "Criteria" %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @criteria.title %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_criteria_path(@criteria) %> |
+  <%= link_to "Destroy", @criteria, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", criterias_path %>
+</p>

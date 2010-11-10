@@ -1,4 +1,6 @@
 Omgpop::Application.routes.draw do
+  resources :criterias
+
   resources :ideas
 
   # The priority is based upon order of creation:

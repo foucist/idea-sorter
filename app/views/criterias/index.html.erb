@@ -1,0 +1,17 @@
+<% title "Criterias" %>
+
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+  <% for criteria in @criterias %>
+    <tr>
+      <td><%= criteria.title %></td>
+      <td><%= link_to "Show", criteria %></td>
+      <td><%= link_to "Edit", edit_criteria_path(criteria) %></td>
+      <td><%= link_to "Destroy", criteria, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Criteria", new_criteria_path %></p>
