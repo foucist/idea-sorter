@@ -1,9 +1,18 @@
 --- 
+ideas_009: 
+  concept: |-
+    Develop a poster, develop a book, and develop a series of exercise equipment.
+    
+    The ultimate, life-long, 3 minutes a day, exercise program.
+  created_at: 2010-11-10 02:40:22.789586
+  title: Exercise 4 Everyone
+  updated_at: 2010-11-10 02:40:22.789586
+  id: 9
 ideas_001: 
-  concept: attention management todo list web app
+  concept: Attention management-based todo list web app.
   created_at: 2010-11-09 17:50:58.236093
   title: AutoFocus
-  updated_at: 2010-11-09 17:50:58.236093
+  updated_at: 2010-11-10 00:59:35.643768
   id: 1
 ideas_002: 
   concept: SRS flashcard web app with fluency-based/precision teaching principles incorporated
@@ -11,3 +20,47 @@ ideas_002:
   title: fluencytrainer
   updated_at: 2010-11-09 17:52:21.784761
   id: 2
+ideas_003: 
+  concept: Just need a bookmarklet that lets me tag bookmarks and goes into a "read it later" style list.
+  created_at: 2010-11-10 00:24:07.299122
+  title: Bookmarking web app
+  updated_at: 2010-11-10 01:00:34.778276
+  id: 3
+ideas_004: 
+  concept: Ads for publishers that displays and split tests banners/landers automatically for a wide variety affiliate offers.  Offers average site publishers higher earnings than adsense/etc.
+  created_at: 2010-11-10 00:53:45.588202
+  title: Ad network platform
+  updated_at: 2010-11-10 00:53:45.588202
+  id: 4
+ideas_005: 
+  concept: |-
+    Combine impossibility.org & domai.nr & wordnavigator.com & thesaurus support.  Show all the .tlds & their costs..   Show combinations off recently registered domain names.
+    
+    OR
+    Imagine if people could just watch for new interesting domains name and click to buy!
+  created_at: 2010-11-10 00:56:10.323709
+  title: Domainer site
+  updated_at: 2010-11-10 01:04:37.114105
+  id: 5
+ideas_006: 
+  concept: Platform for getting contract jobs and bringing in contract workers to meet the demand.  Scalable system for quality control, quick payouts, etc.
+  created_at: 2010-11-10 01:06:51.952492
+  title: Microsourcer
+  updated_at: 2010-11-10 01:06:51.952492
+  id: 6
+ideas_007: 
+  concept: |-
+    Utilize Proper JS to make it easy to view comics online. Side ways view, adjustable width.  Dynamically resize images in background.  Maybe use node.js?
+    
+    Extra features later:
+    Make it easy for people to edit raws, edit language, etc.  Social.
+  created_at: 2010-11-10 01:09:29.620662
+  title: Manga Reader Website
+  updated_at: 2010-11-10 01:09:29.620662
+  id: 7
+ideas_008: 
+  concept: The ultimate checklist site.  Needs to have a proper language/UX design for clear readable parallelism/timeline/etc properties.
+  created_at: 2010-11-10 02:06:48.478321
+  title: Check List Site
+  updated_at: 2010-11-10 02:06:48.478321
+  id: 8

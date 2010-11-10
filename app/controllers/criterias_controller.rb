@@ -15,21 +15,17 @@ class CriteriasController < ApplicationController
     @criteria = Criteria.new(params[:criteria])
     if @criteria.save
       flash[:notice] = "Successfully created criteria."
-      redirect_to @criteria
+    redirect_to criterias_url
     else
       render :action => 'new'
     end
-  end
-  
-  def edit
-    @criteria = Criteria.find(params[:id])
   end
   
   def update
     @criteria = Criteria.find(params[:id])
     if @criteria.update_attributes(params[:criteria])
       flash[:notice] = "Successfully updated criteria."
-      redirect_to @criteria
+    redirect_to criterias_url
     else
       render :action => 'edit'
     end

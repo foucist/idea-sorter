@@ -1,17 +1,7 @@
 <% title "Criterias" %>
 
-<table>
-  <tr>
-    <th>Title</th>
-  </tr>
-  <% for criteria in @criterias %>
-    <tr>
-      <td><%= criteria.title %></td>
-      <td><%= link_to "Show", criteria %></td>
-      <td><%= link_to "Edit", edit_criteria_path(criteria) %></td>
-      <td><%= link_to "Destroy", criteria, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
+<% for criteria in @criterias %>
+  <h5><%= link_to criteria.title, criteria %></h5>
+<% end %>
 
 <p><%= link_to "New Criteria", new_criteria_path %></p>

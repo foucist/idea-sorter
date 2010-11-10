@@ -1,19 +1,8 @@
 <% title "Ideas" %>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Concept</th>
-  </tr>
-  <% for idea in @ideas %>
-    <tr>
-      <td><%= idea.title %></td>
-      <td><%= idea.concept %></td>
-      <td><%= link_to "Show", idea %></td>
-      <td><%= link_to "Edit", edit_idea_path(idea) %></td>
-      <td><%= link_to "Destroy", idea, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
+<% for idea in @ideas %>
+  <h4><%= link_to idea.title, idea %></h4>
+  <p><%= simple_format idea.concept %></p>
+<% end %>
 
 <p><%= link_to "New Idea", new_idea_path %></p>
