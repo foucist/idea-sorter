@@ -1,8 +1,14 @@
-<% title "Edit Criteria" %>
+<% title @criteria.title %>
+<p> <%= link_to "All Criterias", criterias_path %> </p>
 
-<%= render 'form' %>
 
-<p>
-  <%= link_to "Destroy", @criteria, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", criterias_path %>
-</p>
+<h1>Ideas</h1>  
+<ul id="ideas">  
+  <% @criteria.ideas.each do |idea| %>  
+    <% content_tag_for :li, idea do %>  
+      <%= link_to idea.title, idea_path(idea) %>  
+    <% end %>  
+  <% end %>  
+</ul>  
+<%= sortable_element 'ideas', :url => sort_criteria_url(@criteria) %> 
+

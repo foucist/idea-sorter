@@ -1,5 +1,7 @@
 Omgpop::Application.routes.draw do
-  resources :criterias
+  resources :criterias do
+    post 'sort', :on => :member
+  end
 
   resources :ideas
 
