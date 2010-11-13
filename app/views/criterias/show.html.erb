@@ -5,7 +5,7 @@
 <h1>Ideas</h1>  
 <ul id="ideas">  
   <% @criteria.ideas.each do |idea| %>  
-    <% content_tag_for :li, idea do %>  
+    <%= content_tag_for :li, idea do %>  
       <%= link_to idea.title, idea_path(idea) %>  
     <% end %>  
   <% end %>  
