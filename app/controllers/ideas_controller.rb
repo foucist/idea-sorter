@@ -6,7 +6,7 @@ class IdeasController < ApplicationController
   def sort
    #Parameters: {"id"=>"1", "ideas"=>["4", "12", "1", "2", "3", "5", "6", "7", "8", "9", "11", "10"]}
     params[:ideas].each_with_index do |idea, index|
-      IdeaRank.update_all({:rank => index+1}, {:criteria_id => params[:id], :idea_id => idea})
+      IdeaRank.update_all({:rank => index+1}, {:criterion_id => params[:id], :idea_id => idea})
     end
     render :nothing => true
   end

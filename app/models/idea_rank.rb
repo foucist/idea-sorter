@@ -1,5 +1,5 @@
 class IdeaRank < ActiveRecord::Base
-  acts_as_list :scope => :criteria, :column => "rank"
-  belongs_to :criteria
+  acts_as_list :scope => :criterion, :column => "rank"
+  belongs_to :criterion
   belongs_to :idea
 end
