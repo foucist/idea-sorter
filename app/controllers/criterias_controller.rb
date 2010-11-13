@@ -4,10 +4,11 @@ class CriteriasController < ApplicationController
   end
 
   def sort
-    params[:ideas].each_with_index do |idea, index|
-      IdeaRank.update_all({:rank => index+1}, {:criteria_id => params[:id], :idea_id => idea})
-    end
-    render :nothing => true  
+    #Parameters: {"criterias"=>["2", "1", "3", "4", "5"], "id"=>"1"}
+    #params[:criteria].each_with_index do |idea, index|
+    #  Criteria.update_all({:rank => index+1}, {:id => params[:id]})
+    #end
+    #render :nothing => true  
   end
 
   def show

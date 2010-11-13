@@ -1,9 +1,13 @@
 Omgpop::Application.routes.draw do
+  resources :rankings
+
   resources :criterias do
     post 'sort', :on => :member
   end
 
-  resources :ideas
+  resources :ideas do
+    post 'sort', :on => :member
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
