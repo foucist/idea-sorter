@@ -1,21 +1,15 @@
 <% title "Rank your ideas by criterion" %>
 
 <ul id="criteria">  
-  <% @criteria.each do |criterion| %>  
-    <%= content_tag_for :li, criterion do %>  
-      <%= link_to criterion.title, criterion %>  
-    <% end %>  
-  <% end %>  
+  <%= render @criteria %>
 </ul>  
 <%= sortable_element 'criteria', :url => sort_criterion_url(@criterion) %> 
 
 
 <ul id="ideas">  
-  <% @criterion.ideas.each do |idea| %>  
-    <%= content_tag_for :li, idea do %>  
-      <%= link_to idea.title, idea_path(idea) %>  
-    <% end %>  
-  <% end %>  
+  <%= render @criterion.ideas %>
 </ul>  
+<div id="ideas_sort">
 <%= sortable_element 'ideas', :url => sort_idea_url(@criterion) %> 
+</div>
 
