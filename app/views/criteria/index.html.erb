@@ -1,19 +1,10 @@
 <% title "Criteria" %>
+<p> <%= link_to "Back to the rankings", rankings_url %> </p>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Rank</th>
-  </tr>
-  <% for criterion in @criteria %>
-    <tr>
-      <td><%= criterion.title %></td>
-      <td><%= criterion.rank %></td>
-      <td><%= link_to "Show", criterion %></td>
-      <td><%= link_to "Edit", edit_criterion_path(criterion) %></td>
-      <td><%= link_to "Destroy", criterion, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-</table>
+<p><%= link_to "Add a new criterion", new_criterion_path %></p>
 
-<p><%= link_to "New Criterion", new_criterion_path %></p>
+<% @criteria.each do |criterion| %>
+  <%= render 'form', :@criterion => criterion %>
+<% end %>
+
+<p> <%= link_to "Back to the rankings", rankings_url %> </p>

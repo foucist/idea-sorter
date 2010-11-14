@@ -1,12 +1,8 @@
 <%= form_for @criterion do |f| %>
   <%= f.error_messages %>
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :rank %><br />
-    <%= f.text_field :rank %>
-  </p>
-  <p><%= f.submit %></p>
+  <%= f.text_field :title, :size => 70 %>
+  <%= f.submit %>
+  <% if @criterion.title %> 
+    <%= link_to "Destroy", @criterion, :confirm => 'Are you sure?', :method => :delete %>
+  <% end %>
 <% end %>

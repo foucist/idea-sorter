@@ -12,6 +12,10 @@ class IdeasController < ApplicationController
   end
 
   def show
+    @ideas_scores = Idea.all.map{|x| [x, x.idea_ranks.map {|x| x.rank * x.criterion.rank }.sum]}.sort_by {|x,y| y }
+  end
+
+  def edit
     @idea = Idea.find(params[:id])
   end
 

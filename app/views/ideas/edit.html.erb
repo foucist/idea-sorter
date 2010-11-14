@@ -1,0 +1,9 @@
+<% title "Edit Idea" %>
+<%= link_to "Back", rankings_url %> 
+
+<%= render 'form' %>
+
+<p>
+  <%= link_to "Back", rankings_url %> | 
+  <%= link_to "Destroy", @idea, :confirm => 'Are you sure?', :method => :delete %>
+</p>

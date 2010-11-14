@@ -1,5 +1,5 @@
 class RankingsController < ApplicationController
-  def index
+  def show
     @criteria = Criterion.all
     @criterion = Criterion.first
   end

@@ -1,8 +1,10 @@
-<% title "Edit Idea" %>
+<p><%= link_to "Go back to ranking the ideas", rankings_url %></p>
+<% title "Ideas" %>
 
-<%= render 'form' %>
+<% @ideas_scores.each do |idea, score| %>
+  <h4><%= link_to idea.title, idea %><span>score: <%= score %></span></h4>
+  <p><%= simple_format idea.concept %></p>
+<% end %>
 
-<p>
-  <%= link_to "Destroy", @idea, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", ideas_path %>
-</p>
+<p><%= link_to "Go back to ranking the ideas", rankings_url %></p>
+<p><%= link_to "New Idea", new_idea_path %></p>

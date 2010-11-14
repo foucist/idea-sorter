@@ -1,8 +1,10 @@
 <% title "Ideas" %>
+<%= link_to "Back to the rankings", rankings_url %>
 
-<% for idea in @ideas %>
+<% @ideas.each do |idea| %>
   <h4><%= link_to idea.title, idea %></h4>
   <p><%= simple_format idea.concept %></p>
 <% end %>
 
 <p><%= link_to "New Idea", new_idea_path %></p>
+<%= link_to "Back to the rankings", rankings_url %>

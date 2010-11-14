@@ -1,7 +1,8 @@
 Omgpop::Application.routes.draw do
-  resources :criteria
+  resource :rankings do
+    resource :ideas
+  end
 
-  resources :rankings
 
   resources :criteria do
     post 'sort', :on => :member
@@ -60,7 +61,7 @@ Omgpop::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  root :to => "rankings#show"
 
   # See how all your routes lay out with "rake routes"
 
