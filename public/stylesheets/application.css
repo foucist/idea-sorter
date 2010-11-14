@@ -85,11 +85,10 @@ a {
 }  
 #criteria a, #criteria a:visited {  
   display:block;
-  width:10em; 
+  width:9em; 
   height:4em;
   border:1px solid #808;  
   font-family:arial, verdana, sans-serif; /* ADDED */  
-  font-size:0.8em; /* ADDED */  
   text-align:center; /* ADDED */  
   text-decoration:none; /* ADDED */  
 }  
