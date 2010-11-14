@@ -3,9 +3,9 @@ Omgpop::Application.routes.draw do
     resource :ideas
   end
 
-
   resources :criteria do
     post 'sort', :on => :member
+    get 'sort', :on => :member
   end
 
   resources :ideas do
