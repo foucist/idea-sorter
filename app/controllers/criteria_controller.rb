@@ -22,7 +22,7 @@ class CriteriaController < ApplicationController
     @criterion = Criterion.new(params[:criterion])
     if @criterion.save
       flash[:notice] = "Successfully created criterion."
-      redirect_to @criterion
+      redirect_to criteria_url
     else
       render :action => 'new'
     end
@@ -36,7 +36,7 @@ class CriteriaController < ApplicationController
     @criterion = Criterion.find(params[:id])
     if @criterion.update_attributes(params[:criterion])
       flash[:notice] = "Successfully updated criterion."
-      redirect_to @criterion
+      redirect_to criteria_url
     else
       render :action => 'edit'
     end
