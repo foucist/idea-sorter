@@ -92,3 +92,9 @@ a {
   text-align:center; /* ADDED */  
   text-decoration:none; /* ADDED */  
 }  
+
+.idea:hover { 
+  background-image:url('/images/arrow-move.png'); 
+  background-repeat: no-repeat; background-position:right top;
+}
+
