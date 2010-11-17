@@ -1,4 +1,4 @@
 <%= content_tag_for :li, idea do %>  
-  <strong><%= idea.title %> <span><%=link_to 'edit', edit_idea_path(idea) %></span></strong>
-  <%= simple_format idea.concept %>
+  <p> <strong><%= idea.title %></strong> <%= truncate(idea.concept, :length => 50) %>
+  <%= link_to "more", edit_idea_path(idea) %>
 <% end %>  
