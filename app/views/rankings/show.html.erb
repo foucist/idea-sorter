@@ -1,24 +1,12 @@
 <% title "Rank your ideas by criteria" %>
 <p><%= link_to 'Final rankings for all of the ideas', rankings_ideas_url %></p>
 
-<strong>Criteria:</strong>
-<%= link_to 'Add a new criterion', new_criterion_url %>
+<div class="criteria">
+  <%= render 'criteria' %>
+</div>
 
-<ul id="criteria">  
-  <%= render @criteria %>
-</ul>  
-<%= sortable_element 'criteria', :url => sort_criterion_url(:criterion), :constraint => 'horizontal' %> 
-
-
-<div style="border:solid 1px yellow; clear:both;">
-<strong>Ideas:</strong>
-<%= link_to 'Add a new idea', new_idea_url %>
-  <ul id="ideas">
-    <%= render @criterion.ideas if @criterion %>
-  </ul>  
-  <div id="ideas_sort">
-    <%= sortable_element 'ideas', :url => sort_idea_url(:criterion) %> 
-  </div>
+<div id="idea_rankings" style="border:solid 1px yellow; clear:both;">
+  <%= render 'ideas' %>
 </div>
 
 <p><%= link_to 'Final rankings for all of the ideas', rankings_ideas_url %></p>

@@ -1,3 +1,2 @@
-$("ideas").update("<%= escape_javascript(render(@criterion.ideas)) %>");
-$("ideas_sort").update("<%= escape_javascript(sortable_element 'ideas', :url => sort_idea_url(@criterion)) %>");
-new Effect.Highlight("ideas", {duration: 2});
+$("idea_rankings").update("<%= escape_javascript(render 'rankings/ideas') %>");
+new Effect.Highlight("ideas_rankings", {duration: 2});

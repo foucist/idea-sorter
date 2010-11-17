@@ -1,0 +1,7 @@
+<strong>Criteria:</strong>
+<%= link_to 'Add a new criterion', new_criterion_url %>
+
+<ul id="criteria">
+  <%= render @criteria %>
+</ul>
+<%= sortable_element 'criteria', :url => sort_criterion_url(:criterion), :constraint => 'horizontal' %>
