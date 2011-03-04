@@ -1,5 +1,5 @@
 <strong>Criteria:</strong>
-<%= link_to 'Add a new criterion', new_criterion_url %>
+<%= render 'criteria/form', :criterion => Criterion.new %>
 
 <ul id="criteria">
   <%= render @criteria %>

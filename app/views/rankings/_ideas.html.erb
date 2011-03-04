@@ -1,8 +1,9 @@
 <strong>Ideas:</strong>
-<%= link_to 'Add a new idea', new_idea_url %>
 
 <ul id="ideas">
   Rank according to: <%= @criterion.title if @criterion %>
   <%= render @criterion.ideas if @criterion %>
 </ul>
 <%= sortable_element 'ideas', :url => sort_idea_url(:criterion) %>
+
+<%= render 'ideas/form', :idea => Idea.new %>
