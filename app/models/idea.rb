@@ -11,8 +11,8 @@ class Idea < ActiveRecord::Base
     Criterion.all.each {|criterion| self.idea_ranks.build(:criterion_id => criterion.id).save }
   end
 
-  def before_create
-    # split that form field for concept into title & concept yeahhhh!
-    self.title, self.concept = concept.split('-',2).map {|x| x.strip}
+  before_create :set_title_and_concept_from_input
+  def set_title_and_concept_from_input
+    self.title, self.concept = concept.split('-',2).map {|x| x.strip} unless title
   end
 end

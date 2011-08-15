@@ -1,7 +1,7 @@
 <strong>Criteria:</strong>
 <%= render 'criteria/form', :criterion => Criterion.new %>
 
-<ul id="criteria">
+<ul id="criteria" style="cursor:move">
   <%= render @criteria %>
 </ul>
-<%= sortable_element 'criteria', :url => sort_criterion_url(:criterion), :constraint => 'horizontal' %>
+<%= sortable_element 'criteria', :url => sort_criterion_url(@criterion), :constraint => 'horizontal' %>

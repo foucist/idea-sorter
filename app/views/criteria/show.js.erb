@@ -1,2 +1,4 @@
 $("idea_rankings").update("<%= escape_javascript(render 'rankings/ideas') %>");
-new Effect.Highlight("ideas_rankings", {duration: 2});
+new Effect.Highlight("ideas", {duration: 5});
+
+new Effect.Highlight("criterion_<%= params[:id] %>", {duration: 5});

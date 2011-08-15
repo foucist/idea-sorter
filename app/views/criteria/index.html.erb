@@ -1,10 +1,11 @@
 <% title "Criteria" %>
 <p> <%= link_to "Back to the rankings", rankings_url %> </p>
 
-<p><%= link_to "Add a new criterion", new_criterion_path %></p>
+<p><%= render 'form', :criterion => Criterion.new %></p>
 
-<% @criteria.each do |criterion| %>
-  <%= render 'form', :@criterion => criterion %>
-<% end %>
+<ul id="criteria" style="cursor:move">
+    <%= render @criteria %>
+</ul>
+<%= sortable_element 'criteria', :url => sort_criterion_url(:criterion) %>
 
 <p> <%= link_to "Back to the rankings", rankings_url %> </p>

@@ -1,9 +1,7 @@
-<strong>Ideas:</strong>
-
-<ul id="ideas">
-  Rank according to: <%= @criterion.title if @criterion %>
+Sort your ideas best from top to bottom for: <strong><%= @criterion.title if @criterion %></strong>
+<ul id="ideas" style="cursor:move">
   <%= render @criterion.ideas if @criterion %>
 </ul>
-<%= sortable_element 'ideas', :url => sort_idea_url(:criterion) %>
+<%= sortable_element 'ideas', :url => sort_idea_url(@criterion) %>
 
 <%= render 'ideas/form', :idea => Idea.new %>
